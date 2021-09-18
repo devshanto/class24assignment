@@ -61,17 +61,108 @@ img{
 /* banner css  */
 .banner-section{
     background-color: rgb(237,246,255);
+    overflow: hidden;
+    padding: 150px 0 20px 0;
 }
 .banner-content-wrap{
-    height: 95vh;
     align-items: center;
     display: flex;
 }
-.banner-left-text h2{}
-.banner-btn{}
-.banner-right-img{
-    
+.banner-left-text h2 {
+	font-size: 41px;
+	font-weight: 600;
 }
-.banner-right-img img{
-    border-radius: 50%;
+.banner-left-text{
+    padding-bottom: 40px;
+}
+.banner-btn {
+	border-radius: 30px;
+	font-weight: 500;
+	display: inline-block;
+	font-size: 18px;
+	padding: 15px 20px;
+	margin-top: 30px;
+}
+.banner-btn:hover{
+    background-color: #fff;
+    color: rgb(82,82,208);
+    border: 1px solid rgb(82,82,208);
+}
+.banner-right-img {
+	position: relative;
+}
+.banner-right-img img {
+	border-radius: 50%;
+	height: 600px;
+	width: 600px;
+	position: absolute;
+	left: 156px;
+	top: -200px;
+}
+/* service section css  */
+
+.service-item{
+    border-radius: 12px;
+    transition: .6s;
+}
+.service-item:hover{
+    background-color: rgb(98,98,208);
+    color: white;
+}
+.service-item:hover .s-icon{
+    border-bottom: 2px solid rgb(255, 255, 255);
+    width: 50px;
+    transition: .6s;
+}
+.service-item:hover .s-icon span{
+    background-color: #fff;
+    color: rgb(82,82,208);
+}
+
+.s-icon {
+	padding-bottom: 20px;
+	border-bottom: 2px solid rgb(98,98,208);
+	width: 35px;
+	margin: 20px 0px;
+}
+.service-top{}
+.service-top p {
+	color: rgb(157,143,236);
+	font-size: 18px;
+	font-weight: 500;
+}
+.service-top h1 {
+	font-weight: 500;
+	margin: 20px 0px;
+	position: relative;
+}
+.service-top h1::after {
+	height: 3px;
+	width: 50px;
+	content: "";
+	position: absolute;
+	left: 4px;
+	top: 105px;
+	background: rgb(157,143,236);
+}
+.service-top span {
+	font-size: 17px;
+	font-weight: 400;
+	color: #606060;
+	display: inline-block;
+	margin-top: 20px;
+}
+.service-item .s-icon span {
+	background-color: rgb(98,98,208);
+	height: 75px;
+	display: inline-block;
+	width: 75px;
+	line-height: 75px;
+	text-align: center;
+	font-size: 35px;
+	color: white;
+	border-radius: 40px 40px 40px 2px;
+}
+.s-footer p {
+	font-size: 17px;
 }
