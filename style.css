@@ -1,0 +1,77 @@
+body,h1,h2,h3,h4,h5,h6,span,a{
+    text-transform: capitalize;
+    font-family: 'Spartan', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/* header css  */
+.main-header{
+    background-color: rgb(231,230,230);
+}
+.main-header img {
+    width: 90px;
+}
+.header-menu {
+	width: 800px;
+}
+.header-menu ul{
+}
+.header-menu ul li{}
+.header-menu ul li a {
+	display: inline-block;
+	color: rgb(97,96,96);
+	font-weight: 600;
+	text-decoration: none;
+	padding: 0px 20px;
+	font-size: 16px;
+    transition: .5s;
+}
+.header-menu ul li:first-child a{
+    color: rgb(82,82,208);
+}
+.header-menu ul li a:hover{
+    color: rgb(82,82,208);
+}
+
+.header-btn a{
+	font-size: 15px;
+	font-weight: 600;
+	display: inline-block;
+	padding: 15px 25px;
+	border-radius: 30px;
+	background: white;
+	border: none;
+    position: relative;
+    z-index: 1;
+}
+.header-btn a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgb(82,82,208);
+    width:0;
+    z-index: -1;
+    transition: .5s;
+
+}
+
+/* banner css  */
+.banner-section{
+    background-color: rgb(237,246,255);
+}
+.banner-content-wrap{
+    height: 95vh;
+    align-items: center;
+    display: flex;
+}
+.banner-left-text h2{}
+.banner-btn{}
+.banner-right-img{
+    
+}
+.banner-right-img img{
+    border-radius: 50%;
+}
